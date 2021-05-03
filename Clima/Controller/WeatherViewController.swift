@@ -59,6 +59,10 @@ extension WeatherViewController: UITextFieldDelegate {
         if let city = searchTextField.text {
         weatherManager.fetchWeather(cityName: city)
         }
+        
+        let weather: WeatherModel?
+        
+        //conditionImageView.image = UIImage(systemName: weather!.conditionName)
         searchTextField.text = ""
     }
 }
